@@ -1,0 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ISpaceMarine.hpp                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: trbonnes <trbonnes@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/03/05 11:03:44 by trbonnes          #+#    #+#             */
+/*   Updated: 2020/03/05 11:10:44 by trbonnes         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef ISPACEMARINE_HPP
+# define ISPACEMARINE_HPP
+
+class	ISpaceMarine {
+public:
+        virtual ~ISpaceMarine() {}
+        virtual ISpaceMarine* clone() const = 0;
+        virtual void battleCry() const = 0;
+        virtual void rangedAttack() const = 0;
+        virtual void meleeAttack() const = 0;
+};
+
+#endif
